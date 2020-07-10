@@ -14,8 +14,8 @@ export default function Join() {
       <div className="joinInnerContainer">
         <h1 className="heading">Join</h1>
         <div>
-          <input placeholder="Nome" className="joinInput" type="text" onChange={(event) => setName(event.target.value)} />
-          <input placeholder="Sala" className="joinInput" type="text" onChange={(event) => setRoom(event.target.value)} />          
+          <input placeholder="Name" className="joinInput" type="text" onChange={(event) => setName(event.target.value)} />
+          <input placeholder="Room" className="joinInput" type="text" onChange={(event) => setRoom(event.target.value)} />          
           <Link 
             onClick={event => (!name || !room ) ? event.preventDefault() : null} 
             to={`/chat?name=${name}&room=${room}`} >            
