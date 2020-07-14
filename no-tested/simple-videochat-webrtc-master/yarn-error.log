@@ -1,0 +1,45 @@
+Arguments: 
+  /home/haw/.nvm/versions/node/v10.15.3/bin/node /usr/share/yarn/bin/yarn.js install
+
+PATH: 
+  /home/haw/Android/platform-tools:/home/haw/Android/tools:/home/haw/.local/bin:/home/haw/.nvm/versions/node/v10.15.3/bin:/home/haw/Android/platform-tools:/home/haw/Android/tools:/home/haw/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/haw/bin:/bin:/home/haw/bin:/bin:/home/haw/Android/Sdk/emulator:/home/haw/Android/Sdk/tools:/home/haw/Android/Sdk/tools/bin:/home/haw/Android/Sdk/platform-tools:/home/haw/android-studio/bin:/home/haw/Android/Sdk/emulator:/home/haw/Android/Sdk/tools:/home/haw/Android/Sdk/tools/bin:/home/haw/Android/Sdk/platform-tools:/home/haw/android-studio/bin
+
+Yarn version: 
+  1.21.1
+
+Node version: 
+  10.15.3
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: getaddrinfo EAI_AGAIN registry.yarnpkg.com registry.yarnpkg.com:443
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:56:26)
+
+npm manifest: 
+  {
+    "name": "simple-videochat-webrtc",
+    "version": "1.0.0",
+    "description": "Video Chat between 2 people using simple-peer",
+    "main": "main.js",
+    "scripts": {
+      "start": "node server.js",
+      "watch": "npx watchify ./public/main.js -o ./public/bundle.js"
+    },
+    "author": "Vinayak Sinha",
+    "dependencies": {
+      "express": "^4.16.4",
+      "simple-peer": "^9.2.1",
+      "socket.io": "^2.2.0"
+    },
+    "devDependencies": {
+      "watchify": "^3.11.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
