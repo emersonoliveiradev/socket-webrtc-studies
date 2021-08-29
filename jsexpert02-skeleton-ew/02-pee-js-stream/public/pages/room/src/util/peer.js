@@ -17,12 +17,12 @@ class PeerBuilder {
     }
 
     setOnCallReceived(fn) {
-        this.onCallReceived = defaultFunctionValue
+        this.onCallReceived = fn
         return this
     }
 
     setOnConnectionOpened(fn) {
-        this.onConnectionOpened
+        this.onConnectionOpened = fn
         return this
     }
 
@@ -37,7 +37,7 @@ class PeerBuilder {
     }
 
     build() {
-        const peer = new PeerBuilder(...this.peerConfig)
+        const peer = new Peer(...this.peerConfig)
 
         peer.on('error', this.onError)
         peer.on('call', this._prepareCallEvent.bind(this))
