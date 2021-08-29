@@ -24,7 +24,7 @@
   "analyze": false,
   "readmeFilename": "README.md",
   "dependencies": {
-    "socket.io": "1.3.5",
+    "socket.io": "2.4.0",
 	"express": "latest"
   },
   "homepage": "https://github.com/nandafroyo"
